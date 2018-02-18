@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Laboration 3</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+  <div class="header">
+    <h1>LABORATION 3</h1>
+  </div>
+
+
+  <div id="searchFilterWrap">
+
+
+
+    <div id="searchDivDropDown">
+      <button id="searchBtn">
+        <i class="fas fa-angle-down" style="font-size: 14px;"></i>
+        <span>Search</span>
+      </button>
+    </div>
+
+    <div id="addhDivDropDown">
+      <button id="addBtn">
+        <i class="fas fa-angle-down" style="font-size: 14px;"></i>
+        <span>Add movie</span>
+      </button>
+    </div>
+
+    <div id="filterDropDown">
+      <button id="filterBtn">
+        <i class="fas fa-angle-down" style="font-size: 14px;"></i>
+        <span>Filter</span>
+      </button>
+
+      <div class="filterMenuDiv">
+        <ul>
+          <li id="liBtn1">Title Alphabetic</li>
+          <li id="liBtn2">Title Alphabets Reverse</li>
+          <li id="liBtn3">Director Alphabetic</li>
+          <li id="liBtn4">Director Alphabets Reverse</li>
+          <li id="liBtn5">Year Low-High</li>
+          <li id="liBtn6">Year High-Low</li>
+        </ul>
+    </div>
+    </div>
+  </div>
+
+  <div class="searchMainBar">
+    <input id="inputSearch" placeholder="Search for movies...">
+  </div>
+
+  <div class="addMainBar">
+    <input id="inputTitle" placeholder="Title..">
+    <input id="inputDirector" placeholder="Director..">
+    <input id="inputPoster" placeholder="Poster..">
+    <input id="inputDate" placeholder="Date..">
+    <button id="okBtn">Ok</button>
+  </div>
+
+  <div id="mainMovieWrap">
+
+
+  </div>
+  <div class="foot">
+      <button class="btnView">1</button>
+      <button class="btnView">2</button>
+      <button class="btnView">3</button>
+      <button class="btnView">4</button>
+      <button class="btnView">5</button>
+  </div> <!--Movie HTML end -->
+  </body>
+</html>

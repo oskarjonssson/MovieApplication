@@ -1,0 +1,325 @@
+body{
+  background-color:  #243649;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  width: 100%;
+  height: 50px;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
+  border-bottom: 0.5px solid white;
+  color: white;
+}
+.header h1{
+  margin: 5px 0 0 35px;
+}
+#right{
+  display: flex;
+  font-family: arial;
+  color: #fff;
+}
+#left{
+  display: flex;
+  font-family: arial;
+  color: #fff;
+}
+#loginDiv, #signInDiv, #homeDiv{
+  color: #fff;
+  opacity: .8;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 17px;
+  line-height: 17px;
+}
+#spaceSign{
+  color: #fff;
+  opacity: .8;
+  margin: 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 17px;
+  line-height: 17px;
+}
+#loginDiv:hover, #signInDiv:hover, #homeDiv:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.movieWrap{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  -webkit-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  width: 185px;
+  margin: 5px;
+
+
+}
+.movieImg{
+  align-items: flex-start;
+  width: 185px;
+  margin: 0;
+}
+.movieWrap p{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.movieName{
+  align-self: center;
+  margin: 4px 0 0;
+}
+.movieDirector{
+align-self: center;
+  margin: 2px 0 0;
+}
+.movieDate{
+  align-self: center;
+  margin:  2px 0 0 0;
+}
+
+.moviePoster{
+  width: 100%;
+}
+
+.inputStyle{
+  padding: 0;
+  margin: 2px 0 0 0px;
+  border: none;
+  display: none;
+  height: 20px;
+  padding: 0px 0px;
+  margin: 5px 0 0 0;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.changeBtn{
+  margin-top:auto;
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #1bc367;
+}
+
+.makeChange{
+  display: none;
+  margin-top:auto;
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #1bc367;
+}
+#mainMovieWrap{
+  max-width: 100%;
+  display: flex;
+  padding: 15px 40px 15px;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+
+
+#searchBtn, #filterBtn , #btnView, #addBtn, #clearBtn, .filterMenuDivShow ul{
+  -webkit-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #1bc367;
+  text-align: center;
+}
+
+
+#okBtn{
+  -webkit-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 3px 14px;
+  margin-left: 20px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #1bc367;
+  text-align: center;
+}
+#inputDirector, #inputPoster, #inputDate, #inputTitle{
+  margin: 0 5px 0 0;
+  padding: 0;
+  border: none;
+  height: 25px;
+  padding: 0px 0px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#searchBtn:hover, #filterBtn:hover, #btnView, #addBtn:hover, .filterMenuDivShow ul li:hover{
+  background: #22dc76;
+}
+
+.btnView{
+  font-family: arial;
+  -webkit-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  -moz-box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  box-shadow: -1px 4px 28px -1px rgba(0,0,0,0.5);
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 6px 14px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #1bc367;
+  margin:  3px;
+
+}
+
+.foot{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.removeBtn{
+  outline: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 4px 14px;
+  border-radius: 1px;
+  border: 1px solid transparent;
+  background: #B22222;
+
+}
+
+#searchFilterWrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 15px 40px 15px;
+  margin: 20px 0 0 0;
+}
+
+#clearBtn {
+  margin-right: auto;
+}
+#searchDivDropDown,  #addhDivDropDown{
+  margin-right: 50px;
+}
+button img{
+  width: 14px;
+}
+#inputSearch{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: arial;
+  width: 20%;
+  height: 30px;
+  padding: 0px 0px;
+  margin: 0 0 0 4px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #233033;
+  color: #fff;
+}
+
+#inputSearch:focus {
+  outline:none;
+}
+.searchMainBarShow, .addMainBarShow{
+  margin: 0;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px 40px 40px;
+  background: #233033;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.searchMainBar, .addMainBar{
+  border: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.filterMenuDiv{
+  margin: 0;
+  border 0;
+  visibility: hidden;
+  position: absolute;
+
+}
+
+.filterMenuDivShow{
+  position: absolute;
+}
+.filterMenuDivShow ul{
+  transition-property: all;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  text-align: left;
+  list-style-type: none;
+  padding: 5px;
+  margin: 0px;
+  background-color: #1bc367;
+}
+.filterMenuDivShow ul li {
+  font-family: arial;
+  padding: 5px;
+  border-bottom: 1px solid #fff;
+}
